@@ -164,3 +164,16 @@ main {
     font-weight: bold;
     margin-top: 0.5rem;
 }
+
+.add-event-btn {
+    display: block;
+    margin: 3rem auto 2rem;
+    background-color: var(--accent);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
