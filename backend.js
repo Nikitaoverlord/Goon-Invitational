@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 const users = {} // a dictionary of objects with each key being the socket.id
 
-var eventInfo = JSON.parse(fs.readFileSync(__dirname + '/public/data/events.json'))
+var eventInfo = JSON.parse(fs.readFileSync(__dirname + '/public/data/events.JSON'))
 
 function updateUsers(){
     io.emit('updated info', (eventInfo))
