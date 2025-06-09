@@ -1,0 +1,24 @@
+{
+  "name": "goon-invitational",
+  "version": "1.0.0",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikitaoverlord/Goon-Invitational.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikitaoverlord/Goon-Invitational/issues"
+  },
+  "homepage": "https://github.com/Nikitaoverlord/Goon-Invitational#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
