@@ -3,6 +3,7 @@ const socket = io();
 var general_info;
 socket.on('updated info', (info) => {
     general_info = info;
+    window.location.reload(true)
 })
 
 socket.on('info', (info) => {
@@ -117,6 +118,7 @@ socket.on('info', (info) => {
 
         main.appendChild(eventDiv)
     }
+
 })
 
 socket.on('add backend athlete', (info) => {
@@ -159,6 +161,9 @@ socket.on('add backend athlete', (info) => {
             events[event].querySelector('p').textContent = events[event].querySelectorAll('li').length + " entries"
         }
     }
+
+    window.location.reload(true)
+
 })
 
 socket.on('remove backend athlete', (info) => {
@@ -180,6 +185,7 @@ socket.on('remove backend athlete', (info) => {
                     }
 
                     events[event].querySelector('p').textContent = events[event].querySelectorAll('li').length + " entries"
+                    break;
                 }
             }
 
@@ -192,6 +198,10 @@ socket.on('remove backend athlete', (info) => {
             }
         }
 
+        
     }
+
+    window.location.reload(true)
+
 
 })

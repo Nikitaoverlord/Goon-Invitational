@@ -51,7 +51,7 @@ io.on('connection', (socket) => {
         let athleteName = athlete_info[0]
         let event = athlete_info[1]
 
-        eventInfo[event].splice([eventInfo[event].indexOf(athleteName)])
+        eventInfo[event].splice(eventInfo[event].indexOf(athleteName), 1)
 
         io.emit('remove backend athlete', ([athleteName, event]))
 
