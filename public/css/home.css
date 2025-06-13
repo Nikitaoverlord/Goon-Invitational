@@ -209,18 +209,8 @@ main {
 
 main {
   padding: 2rem;
-  max-width: 1000px;
+  max-width: 50%;
   margin: 0 auto;
   position: relative;
   z-index: 1;
-}
-
-@media (max-width: 768px) {
-  .side-column {
-    display: none; /* Hides side images on small screens */
-  }
-
-  main {
-    margin: 0 1rem; /* Give the main content some margin on smaller screens */
-  }
 }
