@@ -180,7 +180,7 @@ main {
 
 .side-column {
   position: absolute;
-  top: 40%;
+  top: 200px;
   bottom: 0;
   width: 20%;
   display: flex;
@@ -195,7 +195,7 @@ main {
 .side-column img {
   max-width: 100%;
   height: auto;
-  opacity: 0.65;
+  opacity: 0.75;
   margin-bottom: 20%;
 }
 
@@ -213,4 +213,14 @@ main {
   margin: 0 auto;
   position: relative;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .side-column {
+    display: none; /* Hides side images on small screens */
+  }
+
+  main {
+    margin: 0 1rem; /* Give the main content some margin on smaller screens */
+  }
 }
