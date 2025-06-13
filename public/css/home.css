@@ -214,3 +214,13 @@ main {
   position: relative;
   z-index: 1;
 }
+
+@media (max-width: 768px) {
+  .side-column {
+    display: none; /* Hides side images on small screens */
+  }
+
+  main {
+    max-width: 85%; /* Give the main content some margin on smaller screens */
+  }
+}
